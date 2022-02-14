@@ -1,0 +1,104 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body {
+   font-family: 'poppins';
+}
+
+body{
+   overflow-x: hidden;
+   background-color: #9c9c9c,
+}
+
+h1 {
+   text-align: center;
+   margin: 50px 0;
+   color: #241765;
+}
+
+.slider {
+   width: 100vw;
+   height: 400px;
+   overflow-x: scroll;
+   position: relative;
+   scroll-behavior: smooth;
+   scroll-snap-type: x mandatory;
+   cursor: grab;
+}
+
+.slider::-webkit-scrollbar{
+   display: none;
+}
+
+.inner-slider {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: inline-flex;
+   gap: 30px;
+   pointer-events: none;
+   transition: ease-in 0s;
+   padding: 0 10px;
+}
+
+.card {
+   width: clamp(200px, 95vw, 400px);
+   background-color: #fcfdfd;
+   padding: 30px 50px;
+   border-radius: 10px;
+   box-shadow: 2px 20px 20px rgba(0, 0, 0, 0.1);
+   transition: .5s;
+}
+
+.card-scale-down{
+   transform: scale(.9);
+   opacity: .3;
+}
+
+.card img {
+   width: 50px;
+   border-radius: 50%;
+}
+
+.card-content blockquote{
+   font-size: 5em;
+   height: 70px;
+   color: #e6effb;
+}
+
+.card-content p {
+   color: #4c4681;
+   font-size: 1.2em;
+}
+
+.card-footer {
+   margin-top: 30px;
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+.card-footer .name {
+   color: #241765;
+}
+
+.card-footer .job {
+   color: #4C4681;
+   font-size: .8em;
+   font-weight: 500;
+}
+
+.rating {
+   display: block;
+   width: 100%;
+   color: #ed653e;
+}
+
+
+
+
+
+
